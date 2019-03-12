@@ -1,0 +1,414 @@
+      
+Create package under java project:--->
+	
+	Under project--->Right click on src---->use New option----> select package
+	--->Enter package name (Start with lowercase)--->
+	Click on finish
+
+	package name preffered--->
+			org.java		org.webdriver
+			com.java		com.webdriver
+		
+
+Create Java Class Along with mainMethod:---->
+
+	Right click on package---->New---->Class------>enter
+	classname(Startwith uppercase)---->Select checkbox
+	under which method stubs would you like to create 
+	<----public static void main (String [] args)---->
+	click on finish.
+
+When to write import package for any class:---->
+
+	Whenever need to reuse Class,method or variable from
+	different package , Import is Mandatory
+
+Syntax:-->
+
+	import packgename.classname;
+	write import statement after packagename.
+
+--------------------------------------------------------------------------------------------------------------------->
+Note:---> object identification in Webdriver
+
+
+	*   in selenium all components recognize objects using backend
+	     html source...
+	*   To find unique object properties we need to watch page html source
+		using below options.
+
+				*  Truepath   [it genarate relative xpath]
+				* Default inspect option    [All browsers]
+
+Default inspect option at browser window:---->
+		
+			* open Application
+			* Press F12  (it opens html window)
+			* pick element from webpage
+
+		Navigation:--->  Right click on element you wish to Watch element html source
+			           Select  <----  inspect Element (Q)   ---->
+
+Locators in Webdriver:--->
+
+	id
+	name
+	classname
+	tagname
+	cssselector
+	xpath
+	linktext
+	partiallinktext
+	
+	Note:---> Findout any properties matching in highlighted area
+		and choose unique property before start script writing...
+
+
+How to identify WebEdit box in HtmlSource and prepare script for edtibox:--->
+----------------------------------------------------------------------------------------------------------------------
+
+Html Source:-->
+
+	<input id="user1" type="email" class="inputbox" name="username">
+
+
+	Note:--> We can use Sendkeys Command to enter text to editbox.Send keys
+		command also allow dropdown , checkbox and radio button selection..
+
+	Syntax:--->
+		//character sequence
+		driver.findElement(By.id("user1")).clear();
+		driver.findElement(By.id("user1")).SendKeys("UserInput");
+		
+		//Keyboard inputs
+		driver.findElement(By.id("user1")).SendKeys(keys.TAB);
+
+		//characters sequenece and keyboard inputs
+		driver.findElement(By.id("user1")).SendKeys(keys.TAB,"userinput");
+		driver.findElement(By.id("user1")).SendKeys(keys.TAB+"userinput");
+
+
+	Note:--->  1.  sendkeys command usefull to pass <character sequence or 	
+                   			     Keyboard inputs>
+		2. clear command only we use for webeditbox because 	
+		webdriver append text instead of overriding..
+
+	Why clear command is mandatory before sendkeys....?
+
+		* Because sendkeys command allow keyboard inputs.
+		  for keyboard inputs webdriver doesn't throw exception...
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------
+-------------->How to select option from dropdown using Selenium :---->
+--------------------------------------------------------------------------------------------------------------------
+Html Source:-->
+
+		      <select id="Country" >
+			<option value="Ind"> India</option>
+			<option value="Usa"> America</option>
+			<option value="UK"> United kingdom</option>
+		       </select>
+		
+	Note:-->  Where Object contains Select tag only we Consider as dropdown
+		or combobox, we use below select commands on Select tag 
+		objects only
+
+	Syntax:--->to select dropdown option
+
+		Select obj=new Select(webElement);           //webelement:---> locate element 								at browser window	
+		obj.SelectByvisibletext("dropdown optioname");			 
+		obj.SelectByvalue("option value property");
+		obj.SelectByindex(int option-position);
+
+		//Instant selection method
+		new Select(WebElement).selectByvisibleText("Optionname);
+
+		Select class package:--->
+		org.openqa.selenium.support.ui
+
+
+--------------------------------
+SelectByVisibleText:--->
+--------------------------------
+	In dropdown fields All options have visible names , 
+	use option name to select any dropdown at webpage
+
+Syntax:-->
+		new Select(webelement).selectbyvisibletext("Option Name");
+
+Html Source:-->
+
+			<select id="month">
+				<option value="1">Jan</option>
+				<option value="2">Feb</option>
+				<option value="3">Mar</option>
+			</select>
+
+
+Example:---> Select Feb option  from above html source using Visible text
+
+
+new Select(driver.findElement(By.id("month"))).selectByvisibletext("Feb");
+
+----------------------------
+Selectbyvalue:--->
+----------------------------
+	get dropdown option value from html source, For every
+	dropdown option  developer set one unique value
+	
+Syntax:--->
+		new Select(webelement).selectbyvalue("value in String");
+
+Html Source:-->
+
+		<select id="Country">
+			<option value="IND">India</option>
+			<option value="UK">United Kingdom</option>
+			<option value="USA">America</option>
+		</select>
+
+Example:---> Select option united kingdom from above source using selectbyvalue
+
+syntax:-->
+	new Select(driver.findElement(By.id(Country)).Selectbyvalue("UK");
+
+--------------------------------**********------------------------------------
+
+SelectByIndex:--->
+
+	* In Dropdown options index number always start with zero
+	* position of option-tag under select Element
+
+	Syntax:--->
+		new Select(webelement).selectbyindex(index in numeric);
+	
+htmlsource:--->
+		<select name="Country">
+			<option value="IND">India</option>
+			<option value="UK">United Kingdom</option>
+			<option value="USA">America</option>
+		</select>
+
+Example:---> Select UK option from dropdown using index
+
+Syntax:-->
+		Select ref=new Select(driver.findElement(By.name("Country"));
+		ref.selectbyindex(1);
+------------------------------------------------------------------------------------------------
+ismultiple:---->
+
+	* method usefull to find Dropdown selection state allow multiple
+	   or single option selection
+	* ismultiple is a boolean return type it return <<<true>>> on multiple 
+	 selection, and <<<false>>> on single option selection
+
+	Syntax:--->
+	boolean flag=new Select(webelement).ismultiple();
+	System.out.println(flag);
+
+
+============================================================
+
+Example:-->How to Select multiple options from same combobox--->
+
+	Note:---> combobox  allow multiple Selection  
+		From same dropdown
+Html Source:-->
+
+		<select name="Country" multiple="multiple">
+			<option value="IND">India</option>
+			<option value="UK">United Kingdom</option>
+			<option value="USA">America</option>
+		</select>
+
+Example:---> in above combobox user need to apply visa for UK and USA Same
+		time,Select two options from combobox
+
+Syntax:--->
+
+	Select DropdownCountry=new Select(driver.findElement(By.Id("Country")));
+	DropdownCountry.selectbyindex(1);
+	DropdownCountry.selectbyValue("USA");
+	
+
+-------------------------------------------------------------------------->
+Example:--->Write a program to deselect, any single option from multiple Selection 
+			using visible text
+
+syntax:--->
+
+	new Select(Webelement).deselectbyvisibletext("OptionName");
+
+
+----------------------------------------------------------------------------
+
+Example:--> Write a program to deselect, any single option from multiple Selection 
+		 using <<Deselectbyindex>>
+
+Syntax:-->
+	new Select(webElement).deselectbyindex(indexnumber);
+
+----------------------------------------------------------------------
+
+Example:---> Write a program to deselect, any single option from multiple Selection 
+		 using <<Deselectbyvalue>>
+Syntax:-->
+
+new Select(webelement).deselectbyValue("optionvalue");
+
+-----------------------------------------------------------------------
+
+Example:---> How to Deselect all options from selection
+
+Syntax:--->
+                  new Select(webelement).deselectall();
+
+
+	Note:---> all deselect options will be performed on
+		multiple selection only.
+------------------------------------------------------------------------------------------------------
+getOptions():--->
+	method capture total dropdown options
+Example:--->
+	How to get all Dropdown Options
+
+Syntax:-->
+	  Select ref=new Select(webelement);
+	   ref.getOptions().get(index).click();
+
+
+
+--------------------------****************--------------------------------------------
+
+How to Work with Link?.
+
+	usually link have anchor tag in html source  << a >>,
+	link behaviour it always open new page or new window..
+
+html Source:--->
+
+	 <a  href="http://forgotpassword.com">forgot password?</a>
+
+Example:--> Click above link using  original linkname.
+
+syntax:-->
+	driver.findElement(by.Linktext("forgot password?")).click();
+
+	Note:---> while using linktext follow original name
+		instead of writing partial.
+
+--------------------------****************************------------------------------------------
+Example:--> Click above link using partial name
+syntax:-->
+	driver.findElement(By.partialLinktext("password?")).click();
+	
+	Note:--> When to use partial link text
+		1. When dynamic changes happend at linkname
+		2. When link name is too lengthy......	
+
+	Note:---> while using partialinktext follow partial or original name.
+--------------------------------------------->>>>>
+
+How to Select Checkbox using Webdriver:--->
+
+html source:--->
+<html>
+	<body>
+		<div>
+			<label id="x" for="Y">
+		 	  <input id="Y" type="checkbox"></input>
+			  <span> remember me</span>
+			</label>
+		</div>
+	</body>	
+</html>
+	
+Syntax:-->
+
+	driver.findElement(by.id("Y")).click();   //using checkbox id
+	driver.findElement(by.id("x")).click();   //using label id
+
+	Note:--> to uncheck also we use same command
+
+
+
+--------------------------------------------------
+How to Select Radio Button Using Webdriver
+
+html source:--->
+<html>
+	<body>
+		<div>
+		 	<input id="male" type="radio" ></input>
+		</div>
+	</body>
+		
+</html>
+	
+Syntax:--> to select radio button , we use click option in webdriver
+
+	driver.findElement(By.id("male")).click();
+
+-------------------------------------------------------
+How to identify button properites  using webdriver:---->
+
+html source:--->
+<html>
+	<body>
+		<div>
+		 	<button id="submit" type="submit" ></button>
+			<input id="reg" type="submit"></input>
+			<div id="i00" role="button"></div>
+		</div>
+	</body>
+		
+</html>
+	
+
+Example:--> Click Button Using ID
+
+	driver.findElement(By.id("submit")).click();
+	driver.findElement(By.id("reg")).click();
+
+	driver.findElement(By.id("idvalue")).submit();
+
+----------------------------------------------------------
+How to click Image using Webdriver
+
+	html source:--->
+<html>
+	<body>
+		<div>
+		 	<img id="i01332" type="img" src="branch.png" >				src="branchbutton.jpg"><img>
+		</div>
+	</body>
+		
+</html>
+	
+
+	driver.findElement(By.id("i01332")).click();
+
+
+
+------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
