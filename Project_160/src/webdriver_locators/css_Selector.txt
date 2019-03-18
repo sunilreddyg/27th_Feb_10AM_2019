@@ -1,0 +1,178 @@
+WebDriver Default locators:-->
+
+	ID
+	Name
+	linktext
+	partiallinktext
+	cssSelector
+	xpath
+	classname
+	tagname
+
+=================================================
+CssSelector:-->
+	CssSelector is a global locator it recognize objects at UserInterface.
+	using backend html source.
+
+
+	1. Default css
+	2. Css_Attribute
+	3. Relative css
+	4. Dynamic Css
+	5. Css-position
+
+
+Default_css:-->
+	Default css target object with only   ID and Class property [optionally tagname]
+
+
+	htmlsource:-->
+		<input  id="email"  class="login"  type="text"> </input>
+
+	Using Default ID and class:-->
+
+		driver.findElement(By.id("email"));
+		driver.findElement(By.classname("login"));
+
+	Using CssSelector:-->
+		
+		driver.findElement(By.cssSelector("#email"));
+		driver.findElement(By.cssSelector(".login"));
+
+		Note:--> During Default cssSelector   
+				# refer IDproperty
+			                .  refer Class Property
+
+	   	Identyfy location with ID an class Property.
+			Syntax:===> tagname#ID.Classname
+
+		driver.findElement(By.cssSelector("input#email.login"));
+===============================================================>>
+page htmlsource:--->
+
+1. <div class="C"></div>
+2. <div id="x" class="B"</div>
+3. <div id="x" class="C"></div>         -------> Target Location
+
+Identify 3rd element:--->
+
+		By.id("x")  ------> 2 nd
+		By.class("C")  ----> 1st 
+		By.cssSelector("#x.C")   ---> 3rd Element
+
+=============================================================
+CssSelector =>  Default cssselector --->Combinations
+
+	#id
+	.classname
+	#id.classname
+	tagname#id.classname
+	tagname.classname
+	tagname#id
+
+==============================================================
+Css_Attribute:-->
+		Instead of target elements with id and name property. We can
+	target location with other attributes using Attribute syntax.
+
+
+	Htmlsource:-->
+	<div  id="Sbtn"   aria-lable="Login"  type="submit"></div>
+
+CssAttribute syntax:-->
+
+		By.cssSelector("tagname[Attributename='Attributevalue']")
+		
+
+		By.cssSelector("div[id='Sbtn']")
+		By.cssSelector("div[aria-label='Login']")
+		By.cssSelector("div[type='submit']")
+
+Other than id unique attributes Developer follow:-->
+		ID
+		Name
+		aria-label
+		placeholder
+		dataid
+		datatrackingid
+		datareactid
+		href
+		title
+		aria-describedby
+===================================================
+Css_Multiple Attributes:--> Identify element with multiple attibutes using css selector.
+
+	Syntax:==> 	tagname[prop='pvalue'][prop='pvalue']
+
+page htmlsource:--->
+
+1. <div type="C"></div>
+2. <div id="x" class="B"</div>
+3. <div id="x" type="C"></div>         -------> Target Location
+
+Identify 3rd element:--->
+		
+			By.cssSelector(div[id='x'][type='C'])
+================================================================
+Dynamic Css:-->
+	Target Web element location with partial attributes.
+
+		=>    *   [ Any matching characters]
+		=>    $  [End characters]
+		=>    ^   [Start characters]
+
+Example:--> target element with matching characters
+
+	Manual Browser         :-->   <input  id="687dg_email_987jjhf"></input>
+	Automation Browser :-->   <input  id="54fsdf_email_34534"></input>
+
+
+		by.cssSelector("input[id*='email']")
+===================================================================		
+
+Example:--> target element with start characters
+
+	Manual Browser         :-->   <input  id="email_987jjhf"></input>
+	Automation Browser :-->   <input  id="email_34534"></input>
+
+
+		by.cssSelector("input[id^='email']")
+=============================================================
+Example:--> target element with end characters
+
+	Manual Browser         :-->   <input  id="987jjhfemail"></input>
+	Automation Browser :-->   <input  id="34534email"></input>
+
+
+		by.cssSelector("input[id$='email']")
+=============================================================
+Example:-->  Target Element with parent Node.
+
+HtmlSource:-->
+
+	<div id="login_conainer"  class="demo">
+		<input id="9ju7yg876"  type="text">  ---->Target Element
+	</div>	
+
+
+
+	Syntax:-->
+		parentnode  > childnode...
+
+		By.cssSelector("div[id='login_conainer'] >  input[type='text']")
+
+====================================================================
+
+HtmlSource:-->
+	
+	<div id="login_conainer"  class="demo">
+		<div class="demo">
+			<input id="9ju7yg876"  type="text">  ---->Target Element
+		</div>
+	</div>	
+
+
+Syntax:-->
+		parentnode  <space> childnode...
+
+		By.cssSelector("div[id='login_conainer']  input")
