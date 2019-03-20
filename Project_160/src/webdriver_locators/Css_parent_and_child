@@ -4,21 +4,21 @@ Recognize object when parent element having single child element
 
 <html>
 <body>
-	<div id="reg_container"  class="form">
-		<input id="email" type="text"></input>
-	</div>
+		<div id="reg_container"  class="form">
+				<input id="email" type="text"></input>
+		</div>
 
-	<div id="reg_login"  class="form">
-		<input id="email" type="text"></input>  ------>>>>TargetElement
-	</div>
+		<div id="reg_login"  class="form">
+				<input id="email" type="text"></input>  ------>>>>TargetElement
+		</div>
 </body>
 </html>
 
------------------------------------------------------------------------->
+----------------------------------------------------------------------------------------------->
 Syntax:-->
 	parenttagname[property='pvalue'] > childtagname
 
-	By.cssSelector("div[id='reg_login'] > input");
+	By.cssSelector("div[id='reg_login'] > input[id='email']");
 
 ==============================================================================
 Example2:-->
@@ -27,21 +27,21 @@ Recognize object when parent element having Group child element
 
 <html>
 <body>
-	<div id="reg_container"  class="form">
-		<input id="email" type="text"></input>
-	</div>
+			<div id="reg_container"  class="form">
+						<input id="email" type="text"></input>
+			</div>
 
-	<div id="reg_login"  class="form">
-		<input id="sample" class="abc"></input>
-		<input id="email" type="text"></input>  ------>>>>TargetElement	
-	</div>
+			<div id="reg_login"  class="form">
+						<input id="sample" class="abc"></input>
+						<input id="email" type="text"></input>  ------>>>>TargetElement	
+			</div>
 </body>
 </html>
 ---------------------------------------------------------------------------------->
 Syntax:-->
 	parenttagname[property='pvalue'] > childtagname[prop='pvalue']
 
-	By.cssSelector("div[id='reg_login'] > input[id='email']");
+	By.cssSelector("div[id='reg_login'] > input[type='text']");
 ----------------------------------------------------------------------	
 Example3:-->
 Recognize object when parent-element having duplicate child-elements
@@ -51,10 +51,10 @@ Htmlsource:--->
 <body>
 
 	<div id="reg_login"  class="form">
-		<input id="sample" class="abc"></input>
-		<input id="sample" class="abc"></input>  ------>>>>TargetElement
-		<input id="sample" class="abc"></input>
-		<input id="sample" class="abc"></input>	
+			<input id="sample" class="abc"></input>
+			<input id="sample" class="abc"></input>  ------>>>>TargetElement
+			<input id="sample" class="abc"></input>
+			<input id="sample" class="abc"></input>	
 	</div>
 </body>
 </html>
