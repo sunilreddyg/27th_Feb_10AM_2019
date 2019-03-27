@@ -202,8 +202,8 @@ Example9:-->
 HtmlSource:-->
 
 		<div class="origin">
-			<input id="firstname" name="new">
-			<div class="origin">            --------------------------->Target Element
+					<input id="firstname" name="new">
+					<div class="origin">            --------------------------->Target Element
 		</div>
 		
 	Syntax:-->
@@ -284,19 +284,7 @@ Example:--->
 			
 		//*[text()='user2']/ancestor::ul/following-sibling::ul[2]/li[2]		 
 ------------------------------------------------------------------------------
-WebDriver WebElement locator:--->
 
-		* WebElement locator is firefox extension [plug in]
-		* using WebElement locator we can desing scripts easier
-Advantages:--->
-		* Easy identification of xpath
-		* Script desing in differnt lanaguages
-
-
-	How to generate basic script and Xpath:--->
-		* Right click on element you wish to generate script
-		* Chosse javascript or xpath
-		* select approriate command and it copy to clipboard
 		
 
 
