@@ -1,0 +1,72 @@
+	=> Validation commands return true/false after valdiating
+		original behaviour at webpage..
+			
+			List of validation commands
+					IsDisplayed
+					IsEnabled
+					IsSelected
+					
+					
+=>isDisplayed:-->
+				Method verify element visibility or hidden state
+				and return true/ false during runtime...
+				
+				
+				syntax:-->
+						WebElement Element=driver.findElement(By.id("X"));
+					
+						boolean flag=Element.isDisplayed();
+						system.out.println("Element visible Status  "+flag);
+=========================================================================		
+=>IsEnabled:-->
+				Method verify element enabled or disabled status
+				and return true/false during runtime...
+					
+					
+			Syntax:-->
+					//Identify Element
+					WebElement Element=driver.findElement(By.id("x"));
+					
+					boolean flag=Element.IsEnabled();
+					System.out.println("Element Enabled "+flag);
+=====================================================================							
+=>IsSelected:-->
+			Method return true/false  on element selection state
+			for radio button and checkboxes.
+			
+			Syntax:-->
+					//Identify Element
+					WebElement Element=driver.findElement(By.id("x"));
+					
+					boolean flag=Element.Isselected();
+					System.out.println("Element Selected "+flag);
+					
+		
+-------------------------------------------------------------			
+Example:--> checkbox selection using webdriver...
+	
+to deselect checkbox :---->
+
+			//Identify Element
+			WebElement Checkbox=driver.findElement(By.id("x"));
+	
+			if(Checkbox.isSeelcted())
+			{
+				Checkbox.click();
+			}
+	
+to select checkbox:-->
+
+			//Identify Element
+			WebElement Checkbox=driver.findElement(By.id("x"));
+	
+			if(!Checkbox.isSeelcted())
+			{
+				Checkbox.click();
+			}
+---------------------------------------------------------------------------------------------------------------------------------------------------->
+		
+		
+		
+		
+		
