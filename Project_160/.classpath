@@ -13,5 +13,13 @@
 	<classpathentry kind="lib" path="D:/sunill/27th_Feb_10AM_2019/selenium-libraries/libs/httpcore-4.4.9.jar"/>
 	<classpathentry kind="lib" path="D:/sunill/27th_Feb_10AM_2019/selenium-libraries/libs/okhttp-3.10.0.jar"/>
 	<classpathentry kind="lib" path="D:/sunill/27th_Feb_10AM_2019/selenium-libraries/libs/okio-1.14.1.jar"/>
+	<classpathentry kind="lib" path="D:/sikulix/sikulix.jar"/>
+	<classpathentry kind="lib" path="D:/sikulix/sikulixapi.jar"/>
+	<classpathentry kind="lib" path="D:/sikulix/sikulixsetup-1.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/sunill/27th_Feb_10AM_2019/selenium-libraries/commons-io-2.6/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="D:/sunill/27th_Feb_10AM_2019/selenium-libraries/commons-io-2.6/commons-io-2.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/sunill/27th_Feb_10AM_2019/selenium-libraries/commons-io-2.6/commons-io-2.6-sources.jar"/>
+	<classpathentry kind="lib" path="D:/sunill/27th_Feb_10AM_2019/selenium-libraries/commons-io-2.6/commons-io-2.6-tests.jar"/>
+	<classpathentry kind="lib" path="D:/sunill/27th_Feb_10AM_2019/selenium-libraries/commons-io-2.6/commons-io-2.6-test-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

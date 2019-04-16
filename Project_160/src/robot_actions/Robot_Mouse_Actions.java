@@ -1,43 +1,42 @@
 package robot_actions;
 
 import java.awt.Robot;
+import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-
-public class Download_File {
+public class Robot_Mouse_Actions {
 
 	public static void main(String[] args) throws Exception 
 	{
+		
 		WebDriver driver=new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.get("https://www.seleniumhq.org/download/");
+		driver.get("https://my.naukri.com/account/register/basicdetails");
 		driver.manage().window().maximize();
 		
-		//Identify Element
-		WebElement download=driver.findElement(By.xpath("/html/body/div[3]/div[2]/div[2]/p[3]/a"));
-		download.click();
+		
+		driver.findElement(By.xpath("//button[@value='exp']")).click();
 		Thread.sleep(3000);
 		
-		//Create object for Robot framework
+		
 		Robot robot=new Robot();
 		robot.setAutoDelay(500);
 		
-		//Use shift+Tab
-		robot.keyPress(KeyEvent.VK_SHIFT);
-		robot.keyPress(KeyEvent.VK_TAB);
+		//Perform mouse action to target editbox
+		robot.mouseMove(417, 287);
+		robot.mousePress(InputEvent.BUTTON1_MASK);
 		
-		//release shift
-		robot.keyRelease(KeyEvent.VK_SHIFT);
-		
-		//Press enter
-		robot.keyPress(KeyEvent.VK_ENTER);
-	
-		
+		robot.keyPress(KeyEvent.VK_H);
+		robot.keyPress(KeyEvent.VK_E);
+		robot.keyPress(KeyEvent.VK_L);
+		robot.keyPress(KeyEvent.VK_L);
+		robot.keyPress(KeyEvent.VK_O);
 		
 		
 		

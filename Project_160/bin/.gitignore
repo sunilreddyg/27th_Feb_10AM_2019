@@ -1,7 +1,4 @@
-/validationcommands/
-/variables/
 /verification_Commands/
 /webdriver_locators/
-/switchcommands/
-/mouse_and_keyboard_interactions/
-/robot_actions/
+/screen_capture/
+/sikuli_Scripting/
