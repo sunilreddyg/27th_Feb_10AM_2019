@@ -2,20 +2,21 @@ package screen_capture;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 
-public class Capture_Screen 
+public class CaptureScreen_With_Time_Stamp 
 {
 
-	public static void main(String[] args) throws IOException, Exception 
+	public static void main(String[] args) throws IOException
 	{
+		
 		//Browser initiation and loading webpage..
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.cleartrip.com/");
@@ -32,29 +33,19 @@ public class Capture_Screen
 		
 		
 		
-		//Perform movetoelement action
-		WebElement Aboutus_link=driver.findElement(By.xpath("//a[@title='About Us']"));
-		new Actions(driver).moveToElement(Aboutus_link).perform();
-		Thread.sleep(4000);
+		//Java time stampt
 		
+		//Get system Default date
+		Date d=new Date();
+		//Create simple date format
+		SimpleDateFormat sdf=new SimpleDateFormat("yyyy/MMM/dd/ hh-mm-ss");
+		//Convert default date using simple date format
+		String time=sdf.format(d);
 		
 		
 		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File("screens\\image.png"));
-		
-
-		
-		/*
-		 *  Note:-->
-		 *  		WebDriver capture only visible screen at webpage, Because
-		 *  		by using movetoelement command focus required element before
-		 *  		taken screenshot.
-		 *  
-		 *  	=> WebDriver always override screen when ever we repeatedly execute
-		 *  		syntax..
-		 */
-		
-		
+		FileUtils.copyFile(src, new File("screens\\"+time+"image.png"));
+			
 		
 		
 
