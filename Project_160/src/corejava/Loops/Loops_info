@@ -1,0 +1,20 @@
+Looping in programming language feature 
+which facilitates the execution of a set of instructions/functions 
+repeatedly while some condition evaluates to true.
+
+1. For
+2.While
+3.do-while
+4.Foreach
+
+
+1. Forloop:-->
+		for continue iteration until meet expected range.
+		
+		
+		
+		for(int i=0; i < Range  ; i++)
+		{
+		
+		}
+
