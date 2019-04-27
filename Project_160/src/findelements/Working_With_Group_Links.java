@@ -1,12 +1,10 @@
 package findelements;
 
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.python.modules.thread.thread;
 
 public class Working_With_Group_Links {
 
