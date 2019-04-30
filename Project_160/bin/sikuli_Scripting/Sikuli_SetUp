@@ -1,0 +1,21 @@
+Sikuli:-->
+
+		=> Image recognization automation tool
+		=> Automate what you see on a computer monitor
+		
+Download Setup File:-->
+		
+		URL;--> https://raiman.github.io/SikuliX1/downloads.html
+					=> Click link --> Download the ready to use sikulix.jar (SikuliX IDE)
+					
+					=> Somwhere create empty folder and name it as  "Sikulix"
+					=> Place Sikulix.jar file under sikuli folder
+					=> use double click ot install sikuli into PC..
+					
+				
+					=> Save file into backup drive
+					=> Configure sikuli jar file to current project using buildpath..
+					
+					
+					
+					
