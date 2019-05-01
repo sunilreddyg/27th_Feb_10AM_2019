@@ -13,7 +13,6 @@ public class Gmail_Signin
 		PageFactory.initElements(driver, this);
 	}
 	
-	
 	@FindBy(xpath = "//input[contains(@id,'identifierId')]")
 	WebElement Email_Editbox;
 	
