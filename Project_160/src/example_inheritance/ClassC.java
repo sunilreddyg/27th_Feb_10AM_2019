@@ -35,10 +35,7 @@ public class ClassC extends ClassB
 		var.method2(); //From ClassB
 		var.method3(); //From ClassC
 		
-		
-		
-		
-		
+
 	}
 
 }

@@ -1,0 +1,12 @@
+1. Automation life cycle.
+2. write basic script to launch chromedriver and IEDriver.
+3. Write Relative xpath and Xpath outterText Syntax.
+4. Default Css Format.
+5. Diff between Link and Partial Linktext.
+6. Write a program to select dropdown option using visibleText.
+7.  Diff between findElement and FindElements.
+8.  Handle Alert---How to verify alert presented at webpage.
+9. Switch Between Frames.
+10. Switch To Multiple Windows.
+11.what is difference between Css selector and Xpath
+12.How many types of Verification Commands  
