@@ -1,5 +1,6 @@
 /browser_launch/
 /corejava/
+/datadrivern/
 /diff_package/
 /encapsulation/
 /example_inheritance/
@@ -24,5 +25,4 @@
 /verification_Commands/
 /waitcommands/
 /webdriver_locators/
-/datadrivern/
-/datadriver_Framework/
+/keyword_driven_Framework/
