@@ -34,5 +34,6 @@
 	<classpathentry kind="lib" path="D:/sunill/27th_Feb_10AM_2019/selenium-libraries/poi-3.17/lib/commons-codec-1.10.jar"/>
 	<classpathentry kind="lib" path="D:/sunill/27th_Feb_10AM_2019/selenium-libraries/poi-3.17/lib/commons-collections4-4.1.jar"/>
 	<classpathentry kind="lib" path="D:/sunill/27th_Feb_10AM_2019/selenium-libraries/poi-3.17/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

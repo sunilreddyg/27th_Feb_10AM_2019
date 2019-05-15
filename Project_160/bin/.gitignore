@@ -6,6 +6,7 @@
 /example_inheritance/
 /excel_package/
 /findelements/
+/framework_junit/
 /inheritance_with_Junit_Framework/
 /java_inheritance/
 /javascript/
@@ -26,4 +27,4 @@
 /verification_Commands/
 /waitcommands/
 /webdriver_locators/
-/framework_junit/
+/framework_testng/
