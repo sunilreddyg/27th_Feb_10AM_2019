@@ -127,13 +127,14 @@ Creation of XML file:--->
 
 	Select source tab in XML file
 
+  => copy or type suite file along with class name and packagename..
 
 <suite name="sutie1">
-	<test name="test1">
-		<classes>
-			<class name="packagename.classname"></class>
-		</classes>
-	</test>
+		<test name="test1" verbose="2">
+				<classes>
+						<class name="packagename.classname"></class>
+				</classes>
+		</test>
 </suite>
 
 
@@ -152,7 +153,6 @@ public class testngclass
 		
 	}
 }
-
 
 Note:-->
 	Testng execute methods in alphabetical order, in order to execute methods
@@ -244,15 +244,16 @@ Assert:-->
 
 <suite name="sutie1" >
        <test name="test1">
-	<classes>
-		<parameter name="url" value="http://hotmail.com"></parameter>
-		<parameter name="uid" value="sunilreddy"></parameter>
-		<parameter name="pwd" value="hello123"></parameter>
-
-		<class name="packagename.classname"></class>
-	</classes>
+				<classes>
+					<class name="packagename.classname">
+					
+							<parameter name="url" value="http://hotmail.com"></parameter>
+							<parameter name="uid" value="sunilreddy"></parameter>
+							<parameter name="pwd" value="hello123"></parameter>
+					
+					</class>
+				</classes>
        </test>
-	
 </suite>
 
 Note:--->	
@@ -269,9 +270,7 @@ public void Testmethod(String userdefinedparameter)
 
 	s.o.p(userdefinedparameter);
 }
-
-	
---------------------------------how to retrieve multiple parameter from suite file
+------------how to retrieve multiple parameter from suite file
 
 @Test
 @parameters({"par1","par2"})
@@ -282,19 +281,21 @@ public void Testmethod(String par1, String par2)
 	
 }
 
-	Note:--->  We can find Parameter information at emailable report
+	Note:--->  We can find Parameter information at emailable report.
+					
+=============================================================>
 
------------------------------->How to Execute Two are multiple tests with in suite 
+--->How to Execute Two are multiple tests with in suite 
 
 	
 <suite name="suite1">
-	<test name="test1">
-		//Declare what classes to execute
-	</test>
-
-	<test name="test2">
-		//Declare what classes to execute
-	</test>
+		<test name="test1">
+			//Declare what classes to execute
+		</test>
+	
+		<test name="test2">
+			//Declare what classes to execute
+		</test>
 </suite>
 
 

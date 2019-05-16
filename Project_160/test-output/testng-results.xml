@@ -1,157 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" total="8" passed="6">
+<testng-results skipped="0" failed="0" total="8" passed="8">
   <reporter-output>
-    <line>
-      <![CDATA[Browser launch successfull]]>
-    </line>
-    <line>
-      <![CDATA[Load application successfull]]>
-    </line>
-    <line>
-      <![CDATA[Account login successfull]]>
-    </line>
-    <line>
-      <![CDATA[Email found]]>
-    </line>
-    <line>
-      <![CDATA[email found at inbox]]>
-    </line>
-    <line>
-      <![CDATA[Account signout successfull]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="124" started-at="2019-05-15T07:51:30Z" finished-at="2019-05-15T07:51:30Z">
+  <suite name="deafult" duration-ms="39869" started-at="2019-05-16T07:39:10Z" finished-at="2019-05-16T07:39:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="124" started-at="2019-05-15T07:51:30Z" finished-at="2019-05-15T07:51:30Z">
-      <class name="framework_testng.Testng_Method_Dependencies">
-        <test-method status="PASS" signature="SetUp_browser()[pri:0, instance:framework_testng.Testng_Method_Dependencies@457e2f02]" name="SetUp_browser" is-config="true" duration-ms="0" started-at="2019-05-15T13:21:30Z" finished-at="2019-05-15T13:21:30Z">
+    <test name="test1" duration-ms="30596" started-at="2019-05-16T07:39:10Z" finished-at="2019-05-16T07:39:40Z">
+      <class name="framework_testng.CrossBrowser.CrossBrowser_Test">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:framework_testng.CrossBrowser.CrossBrowser_Test@39aeed2f]" name="launchBrowser" duration-ms="7141" started-at="2019-05-16T13:09:10Z" finished-at="2019-05-16T13:09:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SetUp_browser -->
-        <test-method status="PASS" signature="Browser_launch()[pri:0, instance:framework_testng.Testng_Method_Dependencies@457e2f02]" name="Browser_launch" duration-ms="0" started-at="2019-05-15T13:21:30Z" finished-at="2019-05-15T13:21:30Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Browser launch successfull]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Browser_launch -->
-        <test-method status="PASS" signature="App_Load()[pri:1, instance:framework_testng.Testng_Method_Dependencies@457e2f02]" name="App_Load" duration-ms="0" started-at="2019-05-15T13:21:30Z" depends-on-methods="framework_testng.Testng_Method_Dependencies.Browser_launch" finished-at="2019-05-15T13:21:30Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Load application successfull]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- App_Load -->
-        <test-method status="PASS" signature="User_login()[pri:2, instance:framework_testng.Testng_Method_Dependencies@457e2f02]" name="User_login" duration-ms="0" started-at="2019-05-15T13:21:30Z" depends-on-methods="framework_testng.Testng_Method_Dependencies.App_Load" finished-at="2019-05-15T13:21:30Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Account login successfull]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- User_login -->
-        <test-method status="FAIL" signature="ComposeEmail()[pri:3, instance:framework_testng.Testng_Method_Dependencies@457e2f02]" name="ComposeEmail" duration-ms="0" started-at="2019-05-15T13:21:30Z" depends-on-methods="framework_testng.Testng_Method_Dependencies.User_login" finished-at="2019-05-15T13:21:30Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [msg] but found [emsg]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [msg] but found [emsg]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at framework_testng.Testng_Method_Dependencies.ComposeEmail(Testng_Method_Dependencies.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="loadApp(java.lang.String)[pri:1, instance:framework_testng.CrossBrowser.CrossBrowser_Test@39aeed2f]" name="loadApp" duration-ms="6561" started-at="2019-05-16T13:09:17Z" finished-at="2019-05-16T13:09:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://cleartrip.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ComposeEmail -->
-        <test-method status="PASS" signature="Search_email()[pri:4, instance:framework_testng.Testng_Method_Dependencies@457e2f02]" name="Search_email" duration-ms="0" started-at="2019-05-15T13:21:30Z" depends-on-methods="framework_testng.Testng_Method_Dependencies.User_login" finished-at="2019-05-15T13:21:30Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Email found]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Search_email -->
-        <test-method status="PASS" signature="Verify_Email_At_inbox()[pri:5, instance:framework_testng.Testng_Method_Dependencies@457e2f02]" name="Verify_Email_At_inbox" duration-ms="0" started-at="2019-05-15T13:21:30Z" depends-on-methods="framework_testng.Testng_Method_Dependencies.User_login" finished-at="2019-05-15T13:21:30Z">
-          <reporter-output>
-            <line>
-              <![CDATA[email found at inbox]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Verify_Email_At_inbox -->
-        <test-method status="PASS" signature="Close_browser()[pri:0, instance:framework_testng.Testng_Method_Dependencies@457e2f02]" name="Close_browser" is-config="true" duration-ms="0" started-at="2019-05-15T13:21:30Z" finished-at="2019-05-15T13:21:30Z">
+        </test-method> <!-- loadApp -->
+        <test-method status="PASS" signature="flight_search()[pri:2, instance:framework_testng.CrossBrowser.CrossBrowser_Test@39aeed2f]" name="flight_search" duration-ms="12290" started-at="2019-05-16T13:09:23Z" finished-at="2019-05-16T13:09:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Close_browser -->
-        <test-method status="SKIP" signature="Verify_Email_At_Sentemails()[pri:6, instance:framework_testng.Testng_Method_Dependencies@457e2f02]" name="Verify_Email_At_Sentemails" duration-ms="0" started-at="2019-05-15T13:21:30Z" depends-on-methods="framework_testng.Testng_Method_Dependencies.User_login, framework_testng.Testng_Method_Dependencies.ComposeEmail" finished-at="2019-05-15T13:21:30Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method Testng_Method_Dependencies.Verify_Email_At_Sentemails()[pri:6, instance:framework_testng.Testng_Method_Dependencies@457e2f02] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Testng_Method_Dependencies.Verify_Email_At_Sentemails()[pri:6, instance:framework_testng.Testng_Method_Dependencies@457e2f02] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1028)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:746)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
-	at org.testng.TestNG.runSuites(TestNG.java:1104)
-	at org.testng.TestNG.run(TestNG.java:1076)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- flight_search -->
+        <test-method status="PASS" signature="closeBrowser()[pri:3, instance:framework_testng.CrossBrowser.CrossBrowser_Test@39aeed2f]" name="closeBrowser" duration-ms="4569" started-at="2019-05-16T13:09:36Z" finished-at="2019-05-16T13:09:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_Email_At_Sentemails -->
-        <test-method status="PASS" signature="User_Signout()[pri:7, instance:framework_testng.Testng_Method_Dependencies@457e2f02]" name="User_Signout" duration-ms="0" started-at="2019-05-15T13:21:30Z" depends-on-methods="framework_testng.Testng_Method_Dependencies.User_login" finished-at="2019-05-15T13:21:30Z">
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- framework_testng.CrossBrowser.CrossBrowser_Test -->
+    </test> <!-- test1 -->
+    <test name="test2" duration-ms="39869" started-at="2019-05-16T07:39:10Z" finished-at="2019-05-16T07:39:49Z">
+      <class name="framework_testng.CrossBrowser.CrossBrowser_Test">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:framework_testng.CrossBrowser.CrossBrowser_Test@5e5792a0]" name="launchBrowser" duration-ms="3447" started-at="2019-05-16T13:09:10Z" finished-at="2019-05-16T13:09:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
-            <line>
-              <![CDATA[Account signout successfull]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- User_Signout -->
-      </class> <!-- framework_testng.Testng_Method_Dependencies -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="loadApp(java.lang.String)[pri:1, instance:framework_testng.CrossBrowser.CrossBrowser_Test@5e5792a0]" name="loadApp" duration-ms="18375" started-at="2019-05-16T13:09:13Z" finished-at="2019-05-16T13:09:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://cleartrip.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadApp -->
+        <test-method status="PASS" signature="flight_search()[pri:2, instance:framework_testng.CrossBrowser.CrossBrowser_Test@5e5792a0]" name="flight_search" duration-ms="12661" started-at="2019-05-16T13:09:31Z" finished-at="2019-05-16T13:09:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flight_search -->
+        <test-method status="PASS" signature="closeBrowser()[pri:3, instance:framework_testng.CrossBrowser.CrossBrowser_Test@5e5792a0]" name="closeBrowser" duration-ms="5353" started-at="2019-05-16T13:09:44Z" finished-at="2019-05-16T13:09:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- framework_testng.CrossBrowser.CrossBrowser_Test -->
+    </test> <!-- test2 -->
+  </suite> <!-- deafult -->
 </testng-results>
