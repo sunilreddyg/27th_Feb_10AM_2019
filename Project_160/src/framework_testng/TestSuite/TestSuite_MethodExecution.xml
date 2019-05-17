@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="default-suite">
+		<test name="test1" verbose="2">
+				<classes>
+						<class name="framework_testng.TestSuite.Class1">
+								<methods>
+										<include name="tc003"></include>
+										<include name="tc001"></include>
+								</methods>
+						</class>
+						
+						<class name="framework_testng.TestSuite.Class3">
+								<methods>
+										<exclude name="tc007"></exclude>
+								</methods>
+						</class>
+						
+						
+						
+				</classes>
+		</test>
+</suite>

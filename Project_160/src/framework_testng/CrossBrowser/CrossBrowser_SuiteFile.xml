@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="deafult" parallel="tests" threadcount="2" >
+
+	<!-- 	parameters from suite file -->
+	<parameter name="appurl" value="http://cleartrip.com"></parameter>
+
+	<!-- Run test with firefox browser -->
+	<test name="test1" verbose="2">
+			<classes>
+					<class name="framework_testng.CrossBrowser.CrossBrowser_Test">
+								<parameter name="browsername" value="firefox"></parameter>
+					</class>
+			</classes>
+	</test>
+	
+	
+	<!-- Run test with chrome browser -->
+	<test name="test2" verbose="2">
+			<classes>
+					<class name="framework_testng.CrossBrowser.CrossBrowser_Test">
+								<parameter name="browsername" value="chrome"></parameter>
+					</class>
+			</classes>
+	</test>
+	
+</suite>

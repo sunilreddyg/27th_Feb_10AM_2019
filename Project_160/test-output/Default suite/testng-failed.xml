@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="framework_testng.Testng_Method_Dependencies">
+        <methods>
+          <include name="User_login"/>
+          <include name="Browser_launch"/>
+          <include name="Verify_Email_At_Sentemails"/>
+          <include name="ComposeEmail"/>
+          <include name="App_Load"/>
+          <include name="Close_browser"/>
+          <include name="SetUp_browser"/>
+        </methods>
+      </class> <!-- framework_testng.Testng_Method_Dependencies -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
