@@ -6,17 +6,14 @@
 /example_inheritance/
 /excel_package/
 /findelements/
-/framework_junit/
+/framework_testng/
 /inheritance_with_Junit_Framework/
 /java_inheritance/
-/javascript/
-/keyword_driven_Framework/
 /method_parameters/
 /method_return_types/
 /mouse_and_keyboard_interactions/
 /pageobjects/
 /regular_methods/
-/robot_actions/
 /screen_capture/
 /selenium_Webdriver/
 /sikuli_Scripting/
@@ -27,4 +24,7 @@
 /verification_Commands/
 /waitcommands/
 /webdriver_locators/
-/framework_testng/
+/framework_junit/
+/javascript/
+/keyword_driven_Framework/
+/robot_actions/

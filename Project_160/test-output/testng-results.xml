@@ -1,77 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" total="13" passed="13">
   <reporter-output>
+    <line>
+      <![CDATA[tc004  Executed]]>
+    </line>
+    <line>
+      <![CDATA[tc005  Executed]]>
+    </line>
+    <line>
+      <![CDATA[Tc006 executed]]>
+    </line>
+    <line>
+      <![CDATA[tc004  Executed]]>
+    </line>
+    <line>
+      <![CDATA[tc005  Executed]]>
+    </line>
+    <line>
+      <![CDATA[Tc006 executed]]>
+    </line>
   </reporter-output>
-  <suite name="deafult" duration-ms="39869" started-at="2019-05-16T07:39:10Z" finished-at="2019-05-16T07:39:49Z">
+  <suite name="Crossbrowser" duration-ms="219" started-at="2019-05-17T07:26:59Z" finished-at="2019-05-17T07:26:59Z">
     <groups>
     </groups>
-    <test name="test1" duration-ms="30596" started-at="2019-05-16T07:39:10Z" finished-at="2019-05-16T07:39:40Z">
-      <class name="framework_testng.CrossBrowser.CrossBrowser_Test">
-        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:framework_testng.CrossBrowser.CrossBrowser_Test@39aeed2f]" name="launchBrowser" duration-ms="7141" started-at="2019-05-16T13:09:10Z" finished-at="2019-05-16T13:09:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
+    <test name="chrome" duration-ms="125" started-at="2019-05-17T07:26:59Z" finished-at="2019-05-17T07:26:59Z">
+      <class name="framework_testng.BeforeTest_and_AfterTest.TestSuite2">
+        <test-method status="PASS" signature="tc005()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.TestSuite2@4678c730]" name="tc005" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[tc005  Executed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc005 -->
+        <test-method status="PASS" signature="tc004()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.TestSuite2@4678c730]" name="tc004" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[tc004  Executed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc004 -->
+        <test-method status="PASS" signature="tc006()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.TestSuite2@4678c730]" name="tc006" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Tc006 executed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc006 -->
+      </class> <!-- framework_testng.BeforeTest_and_AfterTest.TestSuite2 -->
+      <class name="framework_testng.BeforeTest_and_AfterTest.Test_for_Chrome">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.Test_for_Chrome@39aeed2f]" name="beforeTest" is-config="true" duration-ms="16" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loadApp(java.lang.String)[pri:1, instance:framework_testng.CrossBrowser.CrossBrowser_Test@39aeed2f]" name="loadApp" duration-ms="6561" started-at="2019-05-16T13:09:17Z" finished-at="2019-05-16T13:09:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://cleartrip.com]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.Test_for_Chrome@39aeed2f]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loadApp -->
-        <test-method status="PASS" signature="flight_search()[pri:2, instance:framework_testng.CrossBrowser.CrossBrowser_Test@39aeed2f]" name="flight_search" duration-ms="12290" started-at="2019-05-16T13:09:23Z" finished-at="2019-05-16T13:09:36Z">
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="login()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.Test_for_Chrome@39aeed2f]" name="login" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- flight_search -->
-        <test-method status="PASS" signature="closeBrowser()[pri:3, instance:framework_testng.CrossBrowser.CrossBrowser_Test@39aeed2f]" name="closeBrowser" duration-ms="4569" started-at="2019-05-16T13:09:36Z" finished-at="2019-05-16T13:09:40Z">
+        </test-method> <!-- login -->
+      </class> <!-- framework_testng.BeforeTest_and_AfterTest.Test_for_Chrome -->
+      <class name="framework_testng.BeforeTest_and_AfterTest.TestSuite1">
+        <test-method status="PASS" signature="tc001()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.TestSuite1@724af044]" name="tc001" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- framework_testng.CrossBrowser.CrossBrowser_Test -->
-    </test> <!-- test1 -->
-    <test name="test2" duration-ms="39869" started-at="2019-05-16T07:39:10Z" finished-at="2019-05-16T07:39:49Z">
-      <class name="framework_testng.CrossBrowser.CrossBrowser_Test">
-        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:framework_testng.CrossBrowser.CrossBrowser_Test@5e5792a0]" name="launchBrowser" duration-ms="3447" started-at="2019-05-16T13:09:10Z" finished-at="2019-05-16T13:09:13Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- tc001 -->
+        <test-method status="PASS" signature="tc002()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.TestSuite1@724af044]" name="tc002" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="loadApp(java.lang.String)[pri:1, instance:framework_testng.CrossBrowser.CrossBrowser_Test@5e5792a0]" name="loadApp" duration-ms="18375" started-at="2019-05-16T13:09:13Z" finished-at="2019-05-16T13:09:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://cleartrip.com]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- tc002 -->
+        <test-method status="PASS" signature="tc003()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.TestSuite1@724af044]" name="tc003" duration-ms="15" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loadApp -->
-        <test-method status="PASS" signature="flight_search()[pri:2, instance:framework_testng.CrossBrowser.CrossBrowser_Test@5e5792a0]" name="flight_search" duration-ms="12661" started-at="2019-05-16T13:09:31Z" finished-at="2019-05-16T13:09:44Z">
+        </test-method> <!-- tc003 -->
+      </class> <!-- framework_testng.BeforeTest_and_AfterTest.TestSuite1 -->
+    </test> <!-- chrome -->
+    <test name="firefox" duration-ms="63" started-at="2019-05-17T07:26:59Z" finished-at="2019-05-17T07:26:59Z">
+      <class name="framework_testng.BeforeTest_and_AfterTest.TestSuite2">
+        <test-method status="PASS" signature="tc005()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.TestSuite2@59f99ea]" name="tc005" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[tc005  Executed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc005 -->
+        <test-method status="PASS" signature="tc006()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.TestSuite2@59f99ea]" name="tc006" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Tc006 executed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc006 -->
+        <test-method status="PASS" signature="tc004()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.TestSuite2@59f99ea]" name="tc004" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[tc004  Executed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc004 -->
+      </class> <!-- framework_testng.BeforeTest_and_AfterTest.TestSuite2 -->
+      <class name="framework_testng.BeforeTest_and_AfterTest.Test_For_Firefox">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.Test_For_Firefox@27efef64]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- flight_search -->
-        <test-method status="PASS" signature="closeBrowser()[pri:3, instance:framework_testng.CrossBrowser.CrossBrowser_Test@5e5792a0]" name="closeBrowser" duration-ms="5353" started-at="2019-05-16T13:09:44Z" finished-at="2019-05-16T13:09:49Z">
+        </test-method> <!-- afterTest -->
+      </class> <!-- framework_testng.BeforeTest_and_AfterTest.Test_For_Firefox -->
+      <class name="framework_testng.BeforeTest_and_AfterTest.TestSuite1">
+        <test-method status="PASS" signature="tc001()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.TestSuite1@ae45eb6]" name="tc001" duration-ms="16" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- framework_testng.CrossBrowser.CrossBrowser_Test -->
-    </test> <!-- test2 -->
-  </suite> <!-- deafult -->
+        </test-method> <!-- tc001 -->
+        <test-method status="PASS" signature="tc003()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.TestSuite1@ae45eb6]" name="tc003" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc003 -->
+        <test-method status="PASS" signature="tc002()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.TestSuite1@ae45eb6]" name="tc002" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc002 -->
+      </class> <!-- framework_testng.BeforeTest_and_AfterTest.TestSuite1 -->
+    </test> <!-- firefox -->
+  </suite> <!-- Crossbrowser -->
 </testng-results>

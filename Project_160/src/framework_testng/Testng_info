@@ -374,7 +374,8 @@ Creating Dataprovider class:--->
   @Test(dataProvider = "methodname")
   public void f(String uid,String pwd) 
   {
-	
+	  
+	    //Method paramters need to declare depends on Dataprovider Method.
 	
   }
 ------------------------------------------------------------------------------------------>
