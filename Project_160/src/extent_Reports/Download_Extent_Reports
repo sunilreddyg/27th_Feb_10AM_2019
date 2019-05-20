@@ -1,0 +1,43 @@
+Extent Reports:-->
+
+	An open-source reporting library for Java, .Net and Ruby. 
+	
+Download extent Reports 1.4 :-->
+
+	URl:--> 
+		https://mvnrepository.com/artifact/com.relevantcodes/extentreports
+		choose version  [1.4]
+		download jar File..
+		configure jar file to java project....
+		
+		Extent reports Site:-->
+			
+			http://extentreports.com/docs/versions/2/java/
+		
+		
+		
+Download Extent Reports 2.4:-->
+	
+	URL:--> https://mvnrepository.com/artifact/com.relevantcodes/extentreports/2.41.2
+
+Download freemaker 2.3:-->
+	
+	URL:--> central.maven.org/maven2/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar
+
+	Note:--> After download configure both files to selenium project.
+
+
+	//Create object for ExtentReports
+	ExtentReports extent = new ExtentReports(file-path, replaceExisting);
+
+	ExtentTest test = extent.startTest("Test Name", "Sample description");
+	test.log(LogStatus.PASS, "Step details");
+
+	// ending test
+	extent.endTest(test);
+
+	// writing everything to document
+	extent.flush();
+		
+		
+		

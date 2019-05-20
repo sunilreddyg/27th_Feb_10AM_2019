@@ -37,7 +37,7 @@ public class MyTest
   }
   
   int i=0;
-  @Test(invocationCount=5,successPercentage=80)
+  @Test(invocationCount=5,successPercentage=60)
   public void tc006() throws Exception 
   {
 	 i=i+1;

@@ -1,0 +1,25 @@
+Apache POI:--->
+	
+		An opensource library to read,write,desing at
+		Microsoft documents..
+
+Download Apache POI:-->
+
+	  URL:--->  https://archive.apache.org/dist/poi/release/bin/
+	  			Download  previous version --> 3.17
+	  			Download zip format file
+	  			unzip file to project libraries
+	  			configure all executable jar files to java-selenium-project.
+	  			
+	  			HSSF-Workbook    [97-2003] -----> .xls
+	  			
+	  			XSSF-Workbook    [2007 above]  ----> .xlsx
+	  			
+=====================================================================================>
+Step1:--> Create TestData folder
+Step2:--> Create Inputdata workbook.
+Step3:--> Open Workbook and prepare testdata at rows and cells
+=====================================================================================>
+	  			
+	  			
+	  			

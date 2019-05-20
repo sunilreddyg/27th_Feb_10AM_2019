@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="framework_testng.DP.DataProvider_With_Excel_Intergration">
+      <class name="framework_testng.Test_listners.MyTest">
         <methods>
-          <include name="tearDownAfterClass"/>
-          <include name="setUpBeforeClass"/>
-          <include name="Verify_Operator"/>
+          <include name="tc002"/>
+          <include name="tc005"/>
+          <include name="tc003"/>
         </methods>
-      </class> <!-- framework_testng.DP.DataProvider_With_Excel_Intergration -->
+      </class> <!-- framework_testng.Test_listners.MyTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

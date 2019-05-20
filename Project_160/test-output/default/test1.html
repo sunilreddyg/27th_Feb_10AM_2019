@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>test1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/1/2</td>
 </tr><tr>
-<td>Started on:</td><td>Thu May 16 12:50:50 IST 2019</td>
+<td>Started on:</td><td>Mon May 20 12:20:01 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>8 seconds (8620 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (146 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,145 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='framework_testng.Test_listners.MyTest.tc002()'><b>tc002</b><br>Test class: framework_testng.Test_listners.MyTest</td>
+<td><div><pre>java.lang.AssertionError: expected [google] but found [gmail]
+	at framework_testng.Test_listners.MyTest.tc002(MyTest.java:18)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1386767190", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1386767190'><pre>java.lang.AssertionError: expected [google] but found [gmail]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at framework_testng.Test_listners.MyTest.tc002(MyTest.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>0</td>
+<td>framework_testng.Test_listners.MyTest@28feb3fa</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-percent'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS BUT WITHIN SUCCESS PERCENTAGE</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='framework_testng.Test_listners.MyTest.tc006()'><b>tc006</b><br>Test class: framework_testng.Test_listners.MyTest</td>
+<td><div><pre>java.lang.AssertionError: expected [wd] but found [wd1]
+	at framework_testng.Test_listners.MyTest.tc006(MyTest.java:46)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace717386707", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace717386707'><pre>java.lang.AssertionError: expected [wd] but found [wd1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at framework_testng.Test_listners.MyTest.tc006(MyTest.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>0</td>
+<td>framework_testng.Test_listners.MyTest@28feb3fa</td></tr>
+<tr>
+<td title='framework_testng.Test_listners.MyTest.tc006()'><b>tc006</b><br>Test class: framework_testng.Test_listners.MyTest</td>
+<td><div><pre>java.lang.AssertionError: expected [wd] but found [wd1]
+	at framework_testng.Test_listners.MyTest.tc006(MyTest.java:46)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1875308878", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1875308878'><pre>java.lang.AssertionError: expected [wd] but found [wd1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at framework_testng.Test_listners.MyTest.tc006(MyTest.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>0</td>
+<td>framework_testng.Test_listners.MyTest@28feb3fa</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,46 +214,108 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='framework_testng.Suite_Parameter.Get_Parameters_From_Suite.User_login()'><b>User_login</b><br>Test class: framework_testng.Suite_Parameter.Get_Parameters_From_Suite<br>Parameters: vijay, hello<br/>
-<a href="#Output-2050339061" onClick='toggleBox("Output-2050339061", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2050339061" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2050339061">
-Email enter successfull<br/>
-</div>
-</td>
+<td title='framework_testng.Test_listners.MyTest.tc001()'><b>tc001</b><br>Test class: framework_testng.Test_listners.MyTest</td>
 <td></td>
 <td>0</td>
-<td>framework_testng.Suite_Parameter.Get_Parameters_From_Suite@5c7fa833</td></tr>
+<td>framework_testng.Test_listners.MyTest@28feb3fa</td></tr>
 <tr>
-<td title='framework_testng.Suite_Parameter.Get_Parameters_From_Suite.User_registration()'><b>User_registration</b><br>Test class: framework_testng.Suite_Parameter.Get_Parameters_From_Suite<br>Parameters: Newuser</td>
+<td title='framework_testng.Test_listners.MyTest.tc004()'><b>tc004</b><br>Test class: framework_testng.Test_listners.MyTest</td>
 <td></td>
 <td>0</td>
-<td>framework_testng.Suite_Parameter.Get_Parameters_From_Suite@5c7fa833</td></tr>
+<td>framework_testng.Test_listners.MyTest@28feb3fa</td></tr>
 <tr>
-<td title='framework_testng.Suite_Parameter.Get_Parameters_From_Suite.launch_browser()'><b>launch_browser</b><br>Test class: framework_testng.Suite_Parameter.Get_Parameters_From_Suite<br>Parameters: chrome<br/>
-<a href="#Output-1187903677" onClick='toggleBox("Output-1187903677", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1187903677" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1187903677">
-firefox browser launched<br/>
-</div>
-</td>
+<td title='framework_testng.Test_listners.MyTest.tc006()'><b>tc006</b><br>Test class: framework_testng.Test_listners.MyTest</td>
 <td></td>
-<td>3</td>
-<td>framework_testng.Suite_Parameter.Get_Parameters_From_Suite@5c7fa833</td></tr>
+<td>0</td>
+<td>framework_testng.Test_listners.MyTest@28feb3fa</td></tr>
 <tr>
-<td title='framework_testng.Suite_Parameter.Get_Parameters_From_Suite.loadWebpage()'><b>loadWebpage</b><br>Test class: framework_testng.Suite_Parameter.Get_Parameters_From_Suite<br>Parameters: http://facebook.com<br/>
-<a href="#Output-364597300" onClick='toggleBox("Output-364597300", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-364597300" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-364597300">
-Webpage load successfull<br/>
-</div>
-</td>
+<td title='framework_testng.Test_listners.MyTest.tc006()'><b>tc006</b><br>Test class: framework_testng.Test_listners.MyTest</td>
 <td></td>
-<td>4</td>
-<td>framework_testng.Suite_Parameter.Get_Parameters_From_Suite@5c7fa833</td></tr>
+<td>0</td>
+<td>framework_testng.Test_listners.MyTest@28feb3fa</td></tr>
+<tr>
+<td title='framework_testng.Test_listners.MyTest.tc006()'><b>tc006</b><br>Test class: framework_testng.Test_listners.MyTest</td>
+<td></td>
+<td>0</td>
+<td>framework_testng.Test_listners.MyTest@28feb3fa</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='framework_testng.Test_listners.MyTest.tc003()'><b>tc003</b><br>Test class: framework_testng.Test_listners.MyTest</td>
+<td><div><pre>org.testng.SkipException: I Skipped
+	at framework_testng.Test_listners.MyTest.tc003(MyTest.java:24)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1558712965", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1558712965'><pre>org.testng.SkipException: I Skipped
+	at framework_testng.Test_listners.MyTest.tc003(MyTest.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>0</td>
+<td>framework_testng.Test_listners.MyTest@28feb3fa</td></tr>
+<tr>
+<td title='framework_testng.Test_listners.MyTest.tc005()'><b>tc005</b><br>Test class: framework_testng.Test_listners.MyTest</td>
+<td><div><pre>org.testng.SkipException: I Skipped
+	at framework_testng.Test_listners.MyTest.tc005(MyTest.java:36)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1589683045", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1589683045'><pre>org.testng.SkipException: I Skipped
+	at framework_testng.Test_listners.MyTest.tc005(MyTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>0</td>
+<td>framework_testng.Test_listners.MyTest@28feb3fa</td></tr>
 </table><p>
 </body>
 </html>

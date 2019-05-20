@@ -1,125 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="13" passed="13">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
-    <line>
-      <![CDATA[tc004  Executed]]>
-    </line>
-    <line>
-      <![CDATA[tc005  Executed]]>
-    </line>
-    <line>
-      <![CDATA[Tc006 executed]]>
-    </line>
-    <line>
-      <![CDATA[tc004  Executed]]>
-    </line>
-    <line>
-      <![CDATA[tc005  Executed]]>
-    </line>
-    <line>
-      <![CDATA[Tc006 executed]]>
-    </line>
   </reporter-output>
-  <suite name="Crossbrowser" duration-ms="219" started-at="2019-05-17T07:26:59Z" finished-at="2019-05-17T07:26:59Z">
+  <suite name="Default suite" duration-ms="15087" started-at="2019-05-20T07:20:57Z" finished-at="2019-05-20T07:21:12Z">
     <groups>
     </groups>
-    <test name="chrome" duration-ms="125" started-at="2019-05-17T07:26:59Z" finished-at="2019-05-17T07:26:59Z">
-      <class name="framework_testng.BeforeTest_and_AfterTest.TestSuite2">
-        <test-method status="PASS" signature="tc005()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.TestSuite2@4678c730]" name="tc005" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
-          <reporter-output>
-            <line>
-              <![CDATA[tc005  Executed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- tc005 -->
-        <test-method status="PASS" signature="tc004()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.TestSuite2@4678c730]" name="tc004" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
-          <reporter-output>
-            <line>
-              <![CDATA[tc004  Executed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- tc004 -->
-        <test-method status="PASS" signature="tc006()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.TestSuite2@4678c730]" name="tc006" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Tc006 executed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- tc006 -->
-      </class> <!-- framework_testng.BeforeTest_and_AfterTest.TestSuite2 -->
-      <class name="framework_testng.BeforeTest_and_AfterTest.Test_for_Chrome">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.Test_for_Chrome@39aeed2f]" name="beforeTest" is-config="true" duration-ms="16" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
+    <test name="Default test" duration-ms="15087" started-at="2019-05-20T07:20:57Z" finished-at="2019-05-20T07:21:12Z">
+      <class name="framework_testng.TestNg_WithExtentReports">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:framework_testng.TestNg_WithExtentReports@cb5822]" name="beforeClass" is-config="true" duration-ms="6613" started-at="2019-05-20T12:50:57Z" finished-at="2019-05-20T12:51:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.Test_for_Chrome@39aeed2f]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforemethod(java.lang.reflect.Method)[pri:0, instance:framework_testng.TestNg_WithExtentReports@cb5822]" name="beforemethod" is-config="true" duration-ms="3" started-at="2019-05-20T12:51:03Z" finished-at="2019-05-20T12:51:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void framework_testng.TestNg_WithExtentReports.tc001_VerifyHomepage()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="login()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.Test_for_Chrome@39aeed2f]" name="login" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
+        </test-method> <!-- beforemethod -->
+        <test-method status="PASS" signature="tc001_VerifyHomepage()[pri:0, instance:framework_testng.TestNg_WithExtentReports@cb5822]" name="tc001_VerifyHomepage" duration-ms="18" started-at="2019-05-20T12:51:03Z" finished-at="2019-05-20T12:51:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- framework_testng.BeforeTest_and_AfterTest.Test_for_Chrome -->
-      <class name="framework_testng.BeforeTest_and_AfterTest.TestSuite1">
-        <test-method status="PASS" signature="tc001()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.TestSuite1@724af044]" name="tc001" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
+        </test-method> <!-- tc001_VerifyHomepage -->
+        <test-method status="PASS" signature="beforemethod(java.lang.reflect.Method)[pri:0, instance:framework_testng.TestNg_WithExtentReports@cb5822]" name="beforemethod" is-config="true" duration-ms="0" started-at="2019-05-20T12:51:03Z" finished-at="2019-05-20T12:51:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void framework_testng.TestNg_WithExtentReports.tc002_Verify_Downloadpage()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc001 -->
-        <test-method status="PASS" signature="tc002()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.TestSuite1@724af044]" name="tc002" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
+        </test-method> <!-- beforemethod -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:framework_testng.TestNg_WithExtentReports@cb5822]" name="AfterTest" is-config="true" duration-ms="0" started-at="2019-05-20T12:51:03Z" finished-at="2019-05-20T12:51:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc002 -->
-        <test-method status="PASS" signature="tc003()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.TestSuite1@724af044]" name="tc003" duration-ms="15" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
+        </test-method> <!-- AfterTest -->
+        <test-method status="PASS" signature="tc002_Verify_Downloadpage()[pri:0, instance:framework_testng.TestNg_WithExtentReports@cb5822]" name="tc002_Verify_Downloadpage" duration-ms="720" started-at="2019-05-20T12:51:03Z" finished-at="2019-05-20T12:51:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc003 -->
-      </class> <!-- framework_testng.BeforeTest_and_AfterTest.TestSuite1 -->
-    </test> <!-- chrome -->
-    <test name="firefox" duration-ms="63" started-at="2019-05-17T07:26:59Z" finished-at="2019-05-17T07:26:59Z">
-      <class name="framework_testng.BeforeTest_and_AfterTest.TestSuite2">
-        <test-method status="PASS" signature="tc005()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.TestSuite2@59f99ea]" name="tc005" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
-          <reporter-output>
-            <line>
-              <![CDATA[tc005  Executed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- tc005 -->
-        <test-method status="PASS" signature="tc006()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.TestSuite2@59f99ea]" name="tc006" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Tc006 executed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- tc006 -->
-        <test-method status="PASS" signature="tc004()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.TestSuite2@59f99ea]" name="tc004" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
-          <reporter-output>
-            <line>
-              <![CDATA[tc004  Executed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- tc004 -->
-      </class> <!-- framework_testng.BeforeTest_and_AfterTest.TestSuite2 -->
-      <class name="framework_testng.BeforeTest_and_AfterTest.Test_For_Firefox">
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.Test_For_Firefox@27efef64]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
+        </test-method> <!-- tc002_Verify_Downloadpage -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:framework_testng.TestNg_WithExtentReports@cb5822]" name="afterClass" is-config="true" duration-ms="7675" started-at="2019-05-20T12:51:04Z" finished-at="2019-05-20T12:51:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- framework_testng.BeforeTest_and_AfterTest.Test_For_Firefox -->
-      <class name="framework_testng.BeforeTest_and_AfterTest.TestSuite1">
-        <test-method status="PASS" signature="tc001()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.TestSuite1@ae45eb6]" name="tc001" duration-ms="16" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:framework_testng.TestNg_WithExtentReports@cb5822]" name="AfterTest" is-config="true" duration-ms="0" started-at="2019-05-20T12:51:04Z" finished-at="2019-05-20T12:51:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc001 -->
-        <test-method status="PASS" signature="tc003()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.TestSuite1@ae45eb6]" name="tc003" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc003 -->
-        <test-method status="PASS" signature="tc002()[pri:0, instance:framework_testng.BeforeTest_and_AfterTest.TestSuite1@ae45eb6]" name="tc002" duration-ms="0" started-at="2019-05-17T12:56:59Z" finished-at="2019-05-17T12:56:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc002 -->
-      </class> <!-- framework_testng.BeforeTest_and_AfterTest.TestSuite1 -->
-    </test> <!-- firefox -->
-  </suite> <!-- Crossbrowser -->
+        </test-method> <!-- AfterTest -->
+      </class> <!-- framework_testng.TestNg_WithExtentReports -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
